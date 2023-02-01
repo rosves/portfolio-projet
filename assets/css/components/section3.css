@@ -1,0 +1,67 @@
+/*------------ SECTION 3 -----------*/
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills h2 {
+    align-self: center;
+}
+
+.line-1 span {
+    color: #255B4D;
+}
+
+.line-2 span {
+    color: #92564f;
+}
+
+.line-1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 25s infinite linear;
+    font-size: 70px;
+    font-weight: bold;
+    transform: translateX(1%);
+}
+
+.line-2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText2 25s infinite linear;
+    font-size: 70px;
+    font-weight: bold;
+    transform: translateX(-48%);
+}
+
+
+@keyframes floatText {
+    to {
+        transform: translateX(-110%);
+    }
+}
+
+@keyframes floatText2 {
+    to {
+        transform: translateX(110%);
+
+    }
+}
+
+/*------------ RESPONSIVE -----------*/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+}
+
+@media screen and (min-width:1024px) {
+     /* ---- SECTION 3 ---- */
+     .line-2, .line-1 {
+        font-size: 90px;
+    }
+
+    .line-1:hover,
+    .line-2:hover {
+        animation-play-state: paused;
+    }
+}

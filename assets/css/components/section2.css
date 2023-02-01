@@ -1,0 +1,46 @@
+/*------------ SECTION 2 -----------*/
+h2 {
+    font-family: 'Italiana', serif;
+    font-size: 18px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    align-self: center;
+}
+
+#a_propos {
+    display: flex;
+    flex-direction: column;
+}
+
+#a_propos p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*------------ RESPONSIVE -----------*/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* ---- SECTION 2 ---- */
+    h2 {
+        font-size: 27px;
+    }
+
+    #a_propos p {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    /* ---- SECTION 2 ---- */
+    h2 {
+        font-size: 35px;
+    }
+
+    #a_propos p {
+        font-size: 22px;
+        width: 55%;
+        align-self: center;
+    }
+
+}

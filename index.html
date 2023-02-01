@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/4be05ba824.js" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- SECTION 1 / HEADER -->
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="navLinks"><a href="#a_propos">A propos de moi</a></li>
+                <li class="navLinks"><a href="#skills">Skills</a></li>
+                <li class="navLinks"><a href="#projets">Projets</a></li>
+                <li class="navLinks"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="burger">
+            <div class="bar"></div>
+        </button>
+        <nav id="mobile-nav">
+            <ul>
+                <li class="navLinks"><a href="#a_propos">A propos de moi</a></li>
+                <li class="navLinks"><a href="#skills">Skills</a></li>
+                <li class="navLinks"><a href="#projets">Projets</a></li>
+                <li class="navLinks"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <section id="frontend">
+
+                <div class="hero">
+                    <h1 id="title" class="hero__heading">Hi! I'm Lytween and<br> I'm a <span class="dev">frontend
+                            developer</span></h1>
+                </div>
+                <div class="hero hero--secondary" aria-hidden="true" data-hero>
+                    <p class="hero__heading">Hi! I'm Lytween and<br> I'm a<span class="pink italiana"> frontend
+                            developer</span></p>
+                </div>
+            </section>
+        </div>
+        <!-- BANNER -->
+        <div id="banner">
+            <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+                <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none" />
+
+                <text y="40" font-size="40">
+                    <textPath id="text-path" href="#text-curve" startOffset="200">
+                        * à la recherche d'une alternance pour septembre 2023
+                    </textPath>
+                </text>
+            </svg>
+
+        </div>
+
+    </header>
+    <!-- SECTION 2 / 'A PROPOS DE MOI' -->
+    <article id="a_propos">
+        <h2 class="item" data-aos="fade-up">A propos de moi</h2>
+        <p class="item" data-aos="fade-up">Je m’appelle Lytween et je suis développeuse frontend junior. Actuellement
+            étudiante en deuxième année de bachelor de développement web et bientôt en alternance, j’ai développé un
+            intérêt particulier les technologies du web. En effet, j’apprécie énormément cette idée de pouvoir créer
+            quasiment tout ce qui me passe par la tête. Et tout ce que je ne peux pas faire aujourd’hui, je pourrais
+            l’apprendre demain. C’est comme un challenge continu qui m’apporte une grande satisfaction ! J’aime penser
+            cette aventure selon cette phase : ‘Si c’était facile, tout le monde le ferait’. </p>
+
+    </article>
+
+    <!-- SECTION 3 / 'SKILLS'-->
+    <section id="skills">
+        <h2 class="item" data-aos="fade-up">Skills</h2>
+
+        <div class="line-1">
+            <span>HTML5</span> CSS <span> JAVASCRIPT</span>
+            THREE.JS <span>RESPONSIVE </span>
+        </div>
+
+        <div class="line-2">
+            FIGMA
+            <span> PHOTOSHOP</span>
+            INDESIGN
+            <span> ILLUSTRATOR</span>
+            CANVA
+            <span>NOTION</span>
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 4 / 'PROJETS'-->
+
+    <section id="projets"> <!-- gallery -->
+        <h2 class="item" data-aos="fade-up">Projets</h2>
+
+        <div id="projet"> <!-- gallery container -->
+            <article class="gallery-item one ">
+                <h3>.01</h3>
+                <figure data-index="1"><img src="/assets/img/download (1).jpeg"
+                        alt="a little mushroom figure behind a tree"></figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eit ut labore et dolore magna aliqua.
+                    Ut
+                    enim ad minim veniam, quis. </p>
+            </article>
+            <article class="gallery-item two">
+                <h3>.02</h3>
+                <figure data-index="2"><img src="/assets/img/download (1).jpeg"
+                        alt="a little mushroom figure behind a tree"></figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eit ut labore et dolore magna aliqua.
+                    Ut
+                    enim ad minim veniam, quis. </p>
+            </article>
+            <article class=" gallery-item three">
+                <h3>.03</h3>
+                <figure data-index="3"><img src="/assets/img/download (1).jpeg"
+                        alt="a little mushroom figure behind a tree"></figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eit ut labore et dolore magna aliqua.
+                    Ut
+                    enim ad minim veniam, quis. </p>
+            </article>
+            <article class="gallery-item four">
+                <h3>.04</h3>
+                <figure data-index="4"><img src="/assets/img/download (1).jpeg"
+                        alt="a little mushroom figure behind a tree"></figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eit ut labore et dolore magna aliqua.
+                    Ut
+                    enim ad minim veniam, quis. </p>
+            </article>
+            <div class="gallery-controls"></div>
+        </div>
+
+
+    </section>
+    <!-- SECTION 5 / 'CONTACTEZ-MOI'-->
+    <section id="contact">
+        <h2>Contactez-moi !</h2>
+        <form id="signup" class="form">
+            <div class="row">
+                <div class="column">
+                    <div class="form-field">
+
+                        <input type="text" name="fname" id="fname" placeholder="Prénom" autocomplete="off">
+                        <small></small>
+                    </div>
+
+                    <div class="form-field">
+
+                        <input type="text" name="lname" id="lname" placeholder="Nom" autocomplete="off">
+                        <small></small>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="form-field">
+
+                        <input type="text" name="email" id="email" placeholder="Email" autocomplete="off">
+                        <small></small>
+                    </div>
+
+                    <div class="form-field">
+
+                        <input type="tel" name="phone" id="phone" placeholder="Numéro de téléphone" autocomplete="off">
+                        <small></small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-field">
+                <textarea type="text" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <!-- <small></small> -->
+            </div>
+
+            <div class="form-field button">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </section>
+    <section id="#social">
+        <ul class="wrapper-social">
+            <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <span><i class="fab fa-twitter"></i></span>
+            </li>
+            <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fab fa-instagram"></i></span>
+            </li>
+            <li class="icon github">
+                <span class="tooltip">Github</span>
+                <span><i class="fab fa-github"></i></span>
+            </li>
+        </ul>
+    </section>
+    </section>
+    <footer><span>@ 2023</span></footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- JS -->
+    <script src="/js/app.js" defer></script>
+</body>
+
+</html>

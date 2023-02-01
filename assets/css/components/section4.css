@@ -1,0 +1,119 @@
+/*------------ SECTION 4 -----------*/
+#projets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    font-family: 'Italiana';
+    align-self: flex-start;
+    padding-left: 15%;
+    margin-bottom: 2%;
+}
+
+#projets article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#projets article p {
+    width: 70%;
+    justify-self: start;
+    margin-top: 4%;
+}
+
+#projets figure {
+    cursor: pointer;
+    width: 70%;
+    filter: drop-shadow(10px 10px 12px #424141);
+}
+
+#projets figure img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/*------------ RESPONSIVE -----------*/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* ---- SECTION 4 ---- */
+    #projets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #projet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #projets h2 {
+        justify-self: center;
+        align-self: center;
+    }
+
+    #projets article {
+        width: 50%;
+    }
+
+    #projets article p {
+        width: 80%;
+    }
+
+    #projets figure {
+        width: 80%;
+    }
+
+    h3 {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    /* ---- SECTION 4 ---- */
+    #projets {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #projet {
+        display: flex;
+        align-items: center;
+        margin: auto 0;
+    }
+
+    #projet figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+
+    #projet figure:hover img {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.1);
+    }
+
+    #projets h2 {
+        width: 8%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #projets article {
+        width: 40%;
+    }
+
+    h3 {
+        padding-left: 15%;
+    }
+}

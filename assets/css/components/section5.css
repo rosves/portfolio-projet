@@ -1,0 +1,244 @@
+/*------------ SECTION 5 -----------*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+    align-items: center;
+    margin: auto;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+#contact form input:not(.button input) {
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+    margin: 2% 2%;
+    padding-left: 2%;
+
+}
+
+textarea {
+    width: 96%;
+    border: none;
+    border-radius: 10px;
+    margin: 2% 0 0 2%;
+    padding-left: 2%;
+}
+
+small {
+    font-size: 12px;
+    width: 85%;
+    color: #e41c1c;
+}
+
+ 
+.button input {
+    width: 30%;
+    color: #E9CECB;
+    background-color: #255B4D;
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+    margin-left: 2.5%;
+    margin-top: 2%;
+}
+small{
+    margin-left: 4%;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- socialss ---- */
+
+
+*:focus,
+*:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper-social {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 35%;
+}
+
+.wrapper-social .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-social .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-social .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-social .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper-social .icon:hover span,
+.wrapper-social .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-social .twitter:hover,
+.wrapper-social .twitter:hover .tooltip,
+.wrapper-social .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.wrapper-social .instagram:hover,
+.wrapper-social .instagram:hover .tooltip,
+.wrapper-social .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+}
+
+.wrapper-social .github:hover,
+.wrapper-social .github:hover .tooltip,
+.wrapper-social .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+}
+
+/*------------ RESPONSIVE -----------*/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+        /* ---- SECTON 5 ---- */
+    
+        .button input {
+            width: 30%;
+            color: #E9CECB;
+            background-color: #255B4D;
+            border-radius: 10px;
+            border: none;
+            height: 35px;
+            margin-left: 2.5%;
+            margin-top: 2%;
+        }
+        small{
+            margin-left: 4%;
+        }
+        .wrapper-social {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin-top: 32%;
+        }
+    
+}
+
+@media screen and (min-width:1024px) {
+    /* ---- SECTION 5 ---- */
+    #contact {
+        border: 1px #255B4D solid;
+        width: 70%;
+        margin-bottom: -10%;
+        border-radius: 20px;
+    }
+
+    #contact h2 {
+        margin: -5% 7%;
+    }
+
+    #contact form {
+        margin: auto;
+        display: flex;
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 48%;
+        margin-bottom: 2%;
+        margin-left: 2%;
+    }
+
+    #lname, #email, #fname, #phone {
+        width: 92%;
+    }
+
+    #message {
+        width: 95%;
+        align-self: center;
+        margin: auto;
+    }
+
+    .button input {
+        width: 30%;
+        color: #E9CECB;
+        background-color: #255B4D;
+        border-radius: 10px;
+        border: none;
+        height: 35px;
+        margin-left: 2.5%;
+        margin-top: 2%;
+    }
+
+    .wrapper-social {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin-top: 2%;
+    }
+}
